@@ -59,11 +59,17 @@ class Person{
         return 2023 - this.birthYear;
     }
 
-
+    set name(onlyName){
+        if(onlyName.includes(' ')){
+            console.log('Write only your name');
+        } else {
+            console.log(`Greeting, ${onlyName}`);
+        }
+    }
 }
 
 const Dima = new Person("Dima", 1990);
-console.log(Dima.age);
+//console.log(Dima.age);
 
 
 
