@@ -41,7 +41,31 @@ const account = {
 }
 
 //console.log(account.getLastTransaction());
-account.lastTransaction = 1000;
-console.log(account.transactions);
+//account.lastTransaction = 1000;
+//console.log(account.transactions);
+
+class Person{
+
+    constructor(name, birthYear) {
+        this.name = name;
+        this.birthYear = birthYear;
+    }
+
+    printAge(){
+        console.log(2023 - this.birthYear);
+    }
+
+    get age(){
+        return 2023 - this.birthYear;
+    }
+
+
+}
+
+const Dima = new Person("Dima", 1990);
+console.log(Dima.age);
+
+
+
 
 
