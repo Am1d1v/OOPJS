@@ -89,15 +89,15 @@ class Person{
     }
 }
 
-//const difinitePerson = new Person("Dima", 1990);
-
 
 class filmAccount extends Person {
     constructor(name, age){
         super(name, age);
 
+        this.fimaGenres = ['Horror', 'Comedy'];
     }
 }
 
 
-
+const difinitePerson = new filmAccount("Dima", 1990);
+console.log(difinitePerson);
