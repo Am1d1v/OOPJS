@@ -95,9 +95,12 @@ class filmAccount extends Person {
         super(name, age);
 
         this.fimaGenres = ['Horror', 'Comedy'];
+        this._favouriteFilms = [];
     }
 }
 
 
 const difinitePerson = new filmAccount("Dima", 1990);
+difinitePerson._favouriteFilms.push("Film1");
+difinitePerson._favouriteFilms.push("Film2");
 console.log(difinitePerson);
