@@ -27,6 +27,8 @@ console.log(Dima.__proto__ === Person.prototype);
 
 // Setters & Getters
 
+/*
+
 const account = {
     owner: "Dima",
     transactions: [100, -200, 300],
@@ -71,7 +73,31 @@ class Person{
 const Dima = new Person("Dima", 1990);
 //console.log(Dima.age);
 
+*/
 
+
+
+class Person{
+    
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    printAge(){
+        return 2023 - this.age;
+    }
+}
+
+//const difinitePerson = new Person("Dima", 1990);
+
+
+class filmAccount extends Person {
+    constructor(name, age){
+        super(name, age);
+
+    }
+}
 
 
 
